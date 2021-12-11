@@ -2,19 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Circle1 = styled.div`
-background: blue;
+background: #6c2beb;
 width: 24px;
 height: 24px;
 border-radius: 50%;
-filter: blur(2px);
+filter: blur(8px);
 position: absolute;
-left: 50%;
+left: 45%;
 bottom: 5px;
 border: 1px solid rgba(43, 43, 43, 0.568);
 `;
 
 const Circle2 = styled.div`
-background: blue;
+background: #6c2beb;
 width: 34px;
 height: 34px;
 border-radius: 50%;
@@ -26,11 +26,11 @@ border: 1px solid rgba(43, 43, 43, 0.568);
 `;
 
 const Circle3 = styled.div`
-background: blue;
-width: 34px;
-height: 34px;
+background: #6c2beb;
+width: 15px;
+height: 15px;
 border-radius: 50%;
-filter: blur(2px);
+filter: blur(3px);
 position: absolute;
 left: 15%;
 bottom: 55px;

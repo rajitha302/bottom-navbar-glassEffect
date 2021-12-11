@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Home } from 'react-feather';
 
 const Wrapper = styled.footer`
 border-radius: 15px;
@@ -30,13 +31,14 @@ const Heading1 = styled.h1`
 `;
 
 const Icon = styled.span`
-
+color: #fff;
 `;
 
 const BottomNav = () => {
   return (
     <Wrapper>
       <Heading1>Mneu</Heading1>
+      <Home />
     </Wrapper>
   );
 };
