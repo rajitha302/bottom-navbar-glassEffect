@@ -92,14 +92,12 @@ const FourthButton = () => {
 
 const BottomNav = () => {
   return (
-    <Bottom>
-      <Wrapper>
-        <HomeButton />
-        <SecondButton />
-        <ThirdButton />
-        <FourthButton />
-      </Wrapper>
-    </Bottom>
+    <Wrapper>
+      <HomeButton />
+      <SecondButton />
+      <ThirdButton />
+      <FourthButton />
+    </Wrapper>
   );
 };
 
