@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import Footer from './components/Footer';
+import BottomNav from './components/BottomNav';
 import Bubbles from './components/Bubbles';
 import styled from 'styled-components';
 
@@ -16,7 +16,7 @@ export default function App() {
   return (
     <Container>
       <Bubbles />
-      <Footer />
+      <BottomNav />
     </Container>
   );
 }

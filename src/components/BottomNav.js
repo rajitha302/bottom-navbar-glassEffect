@@ -7,8 +7,7 @@ border: 1px solid rgba(43, 43, 43, 0.568);
 position: relative;
 margin: 20px;
 padding: 10px;
-
-
+overflow: hidden;
 
 &:before {
   position: absolute;
@@ -19,8 +18,9 @@ padding: 10px;
   top: 0;
   bottom: 0;
   box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
-  filter: blur(20px);
+  filter: blur(80px);
   border-radius: 15px;
+  margin: -20px;
 }
 `;
 
@@ -29,13 +29,16 @@ const Heading1 = styled.h1`
  position: relative;
 `;
 
-const Footer = () => {
+const Icon = styled.span`
+
+`;
+
+const BottomNav = () => {
   return (
     <Wrapper>
-      <Heading1>Footer</Heading1>
-      <Heading1>Footer</Heading1>
+      <Heading1>Mneu</Heading1>
     </Wrapper>
   );
 };
 
-export default Footer;
+export default BottomNav;
