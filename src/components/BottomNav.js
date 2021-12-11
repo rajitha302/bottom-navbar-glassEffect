@@ -1,14 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Home } from 'react-feather';
+import { Home, Settings, Layers, Image } from 'react-feather';
 
 const Wrapper = styled.footer`
-border-radius: 15px;
+border-radius: 6px;
 border: 1px solid rgba(43, 43, 43, 0.568);
 position: relative;
-margin: 20px;
+margin: 15px;
 padding: 10px;
 overflow: hidden;
+display: flex;
+justify-content: space-around;
 
 &:before {
   position: absolute;
@@ -37,8 +39,10 @@ color: #fff;
 const BottomNav = () => {
   return (
     <Wrapper>
-      <Heading1>Mneu</Heading1>
-      <Home />
+      <Home color="#fff" size={28} strokeWidth={1.5} />
+      <Layers color="#fff" size={28} strokeWidth={1.5} />
+      <Image color="#fff" size={28} strokeWidth={1.5} />
+      <Settings color="#fff" size={28} strokeWidth={1.5} />
     </Wrapper>
   );
 };
