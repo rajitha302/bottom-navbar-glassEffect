@@ -2,12 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { Home, Settings, Layers, Image } from 'react-feather';
 
+const BottomNav = styled.div`
+position: absolute;
+`;
+
 const Wrapper = styled.footer`
-border-radius: 6px;
+border-radius: 16px;
 border: 1px solid rgba(43, 43, 43, 0.568);
 position: relative;
 margin: 15px;
-padding: 10px;
+padding: 15px;
 overflow: hidden;
 display: flex;
 justify-content: space-around;
@@ -27,23 +31,75 @@ justify-content: space-around;
 }
 `;
 
-const Heading1 = styled.h1`
- color: #fff;
+const Title = styled.h5`
+ color: #bcbcbc;
  position: relative;
+ margin-top: 5px;
 `;
 
-const Icon = styled.span`
-color: #fff;
+const ButtonWrapper = styled.span`
+display: block;
+text-align: center;
 `;
+
+const HomeButton = () => {
+  return (
+    <ButtonWrapper>
+      <div className="active">
+        <Home color="#fff" size={24} strokeWidth={1.5} />
+      </div>
+
+      <Title className="activeText">Home</Title>
+    </ButtonWrapper>
+  );
+};
+
+const SecondButton = () => {
+  return (
+    <ButtonWrapper>
+      <div>
+        <Layers color="#bcbcbc" size={24} strokeWidth={1.5} />
+      </div>
+
+      <Title>Market</Title>
+    </ButtonWrapper>
+  );
+};
+
+const ThirdButton = () => {
+  return (
+    <ButtonWrapper>
+      <div>
+        <Image color="#bcbcbc" size={24} strokeWidth={1.5} />
+      </div>
+
+      <Title>Collections</Title>
+    </ButtonWrapper>
+  );
+};
+
+const FourthButton = () => {
+  return (
+    <ButtonWrapper>
+      <div>
+        <Settings color="#bcbcbc" size={24} strokeWidth={1.5} />
+      </div>
+
+      <Title>Settings</Title>
+    </ButtonWrapper>
+  );
+};
 
 const BottomNav = () => {
   return (
-    <Wrapper>
-      <Home color="#fff" size={28} strokeWidth={1.5} />
-      <Layers color="#fff" size={28} strokeWidth={1.5} />
-      <Image color="#fff" size={28} strokeWidth={1.5} />
-      <Settings color="#fff" size={28} strokeWidth={1.5} />
-    </Wrapper>
+    <BottomNav>
+      <Wrapper>
+        <HomeButton />
+        <SecondButton />
+        <ThirdButton />
+        <FourthButton />
+      </Wrapper>
+    </BottomNav>
   );
 };
 
