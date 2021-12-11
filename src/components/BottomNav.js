@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Home, Settings, Layers, Image } from 'react-feather';
 
-const BottomNav = styled.div`
+const Bottom = styled.div`
 position: absolute;
 `;
 
@@ -92,14 +92,14 @@ const FourthButton = () => {
 
 const BottomNav = () => {
   return (
-    <BottomNav>
+    <Bottom>
       <Wrapper>
         <HomeButton />
         <SecondButton />
         <ThirdButton />
         <FourthButton />
       </Wrapper>
-    </BottomNav>
+    </Bottom>
   );
 };
 
