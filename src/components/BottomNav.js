@@ -4,6 +4,8 @@ import { Home, Settings, Layers, Image } from 'react-feather';
 
 const Bottom = styled.div`
 position: absolute;
+bottom: 0;
+width: 100%;
 `;
 
 const Wrapper = styled.footer`
@@ -92,12 +94,14 @@ const FourthButton = () => {
 
 const BottomNav = () => {
   return (
-    <Wrapper>
-      <HomeButton />
-      <SecondButton />
-      <ThirdButton />
-      <FourthButton />
-    </Wrapper>
+    <Bottom>
+      <Wrapper>
+        <HomeButton />
+        <SecondButton />
+        <ThirdButton />
+        <FourthButton />
+      </Wrapper>
+    </Bottom>
   );
 };
 

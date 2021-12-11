@@ -6,7 +6,7 @@ color: #fff;
 `;
 
 const Card = styled.div`
-
+padding: 15px
 `;
 
 const Cards = () => {
