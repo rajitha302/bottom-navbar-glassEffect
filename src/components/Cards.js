@@ -26,7 +26,7 @@ justify-content: space-around;
   top: 0;
   bottom: 0;
   box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
-  filter: blur(80px);
+  filter: blur(40px);
   border-radius: 15px;
   margin: -20px;
 }
