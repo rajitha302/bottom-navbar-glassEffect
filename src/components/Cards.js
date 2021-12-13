@@ -6,7 +6,6 @@ color: #fff;
 `;
 
 const Card = styled.div`
-width: 50vw;
 height: 20vh;
 border-radius: 16px;
 border: 1px solid rgba(43, 43, 43, 0.568);
@@ -14,8 +13,6 @@ position: relative;
 margin: 15px;
 padding: 15px;
 overflow: hidden;
-display: flex;
-justify-content: space-around;
 
 &:before {
   position: absolute;
@@ -40,14 +37,19 @@ const Flex = styled.div`
 display: flex;
 `;
 
+const ViewMoreBtn = styled.h5`
+right: 0;
+position:absolute;
+`;
+
 const Cards = () => {
   return (
     <Wrapper>
-      <SectionHeading>Recent Updates</SectionHeading>
-      <Flex>
-        <Card></Card>
-        <Card></Card>
-      </Flex>
+      <SectionHeading>Top Sales</SectionHeading>
+
+      <Card>
+        <ViewMoreBtn>View More</ViewMoreBtn>
+      </Card>
     </Wrapper>
   );
 };
