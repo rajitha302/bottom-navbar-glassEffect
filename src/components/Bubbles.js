@@ -66,6 +66,7 @@ right: 0;
 top: 5px;
 transform: scale(1);
 animation: ${pulse1} 3s linear infinite;
+z-index: 0;
 `;
 
 const Circle4 = styled.div`

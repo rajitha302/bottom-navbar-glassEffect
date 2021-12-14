@@ -14,6 +14,7 @@ margin: 15px;
 padding: 15px;
 overflow: hidden;
 
+
 &:before {
   position: absolute;
   content: '';
@@ -30,7 +31,8 @@ overflow: hidden;
 `;
 
 const Wrapper = styled.div`
-padding: 15px
+padding: 15px;
+
 `;
 
 const Flex = styled.div`
@@ -38,17 +40,28 @@ display: flex;
 `;
 
 const ViewMoreBtn = styled.h5`
-right: 0;
-position:absolute;
+text-align: right;
+cursor: pointer;
 `;
+
+const CardContent = styled.div`
+position: relative;
+width: 100%;
+z-index: 2;
+`;
+
+const test = () => {
+  console.log('hello');
+};
 
 const Cards = () => {
   return (
     <Wrapper>
       <SectionHeading>Top Sales</SectionHeading>
-
       <Card>
-        <ViewMoreBtn>View More</ViewMoreBtn>
+        <CardContent>
+          <ViewMoreBtn onClick={test}>View More</ViewMoreBtn>
+        </CardContent>
       </Card>
     </Wrapper>
   );
