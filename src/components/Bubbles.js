@@ -3,15 +3,15 @@ import styled, { keyframes } from 'styled-components';
 
 const pulse1 = keyframes`
   0% {
-    transform: scale(0.85);
+    border-radius: 260% 420% 422% 328%;
   }
 
   50% {
-    transform: scale(1);
+    border-radius: 256% 255% 258% 522%;
   }
 
   100% {
-    transform: scale(0.85);
+    border-radius: 253% 246% 424% 245%;
   }
 `;
 
@@ -59,13 +59,13 @@ const Circle3 = styled.div`
 background: #6c2beb;
 width: 200px;
 height: 140px;
-border-radius: 50%;
+border-radius: 260% 420% 422% 328%;
 filter: blur(80px);
 position: absolute;
 right: 0;
 top: 5px;
-transform: scale(1);
-animation: ${pulse1} 3s linear infinite;
+transform: scale(0.84);
+animation: ${pulse1} 3s ease-in-out alternate infinite;
 z-index: 0;
 `;
 
@@ -73,13 +73,13 @@ const Circle4 = styled.div`
 background: #6c2beb;
 width: 200px;
 height: 180px;
-border-radius: 50%;
+border-radius: 460% 320% 422% 328%;
 filter: blur(130px);
 position: absolute;
 left: 0;
 top: 70%;
 transform: scale(1);
-animation: ${pulse2} 2s ease-in-out infinite;
+animation: ${pulse1} 2s ease-in-out infinite;
 `;
 
 const Bubbles = () => {
