@@ -50,6 +50,16 @@ width: 100%;
 z-index: 2;
 `;
 
+const CardItem = styled.div`
+display: flex;
+`;
+
+const ItemImage = styled.img`
+width: 48px;
+height: 48px;
+border-radius: 6px;
+`;
+
 const test = () => {
   console.log('hello');
 };
@@ -61,6 +71,10 @@ const Cards = () => {
       <Card>
         <CardContent>
           <ViewMoreBtn onClick={test}>View More</ViewMoreBtn>
+
+          <CardItem>
+            <ItemImage src="https://public.nftstatic.com/static/nft/zipped/5d1d240c84d948149cdcf3b41068b69d_zipped.png" />
+          </CardItem>
         </CardContent>
       </Card>
     </Wrapper>
