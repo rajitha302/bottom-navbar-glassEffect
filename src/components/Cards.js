@@ -73,6 +73,7 @@ max-width: 15ch;
 const ItemPrice = styled.p`
 margin-left: 30px;
 margin-top: 5px;
+color: #13cb7f;
 `;
 
 const SmallText = styled.span`
@@ -118,7 +119,7 @@ const Cards = () => {
               <div>
                 <ItemTitle>Limited Edition Blueprint #4725</ItemTitle>
                 <ItemPrice>
-                  Price: <SmallText> 100,000.00 BUSD </SmallText>
+                  Price: <SmallText> 90,000.00 BUSD </SmallText>
                 </ItemPrice>
               </div>
             </CardItem>
@@ -129,7 +130,7 @@ const Cards = () => {
               <div>
                 <ItemTitle>Brawler_225_The_Red_Giant</ItemTitle>
                 <ItemPrice>
-                  Price: <SmallText> 100,000.00 BUSD </SmallText>
+                  Price: <SmallText> 85,000.00 BUSD </SmallText>
                 </ItemPrice>
               </div>
             </CardItem>
@@ -149,7 +150,7 @@ const Cards = () => {
               <div>
                 <ItemTitle>Solv Vouchers</ItemTitle>
                 <ItemPrice>
-                  Price: <SmallText> 100,000.00 BUSD </SmallText>
+                  Price: <SmallText> 1,457,920.56 USD </SmallText>
                 </ItemPrice>
               </div>
             </CardItem>
@@ -160,7 +161,7 @@ const Cards = () => {
               <div>
                 <ItemTitle>Binamon Forest Land</ItemTitle>
                 <ItemPrice>
-                  Price: <SmallText> 100,000.00 BUSD </SmallText>
+                  Price: <SmallText> 1,280,330.19 USD </SmallText>
                 </ItemPrice>
               </div>
             </CardItem>
@@ -171,7 +172,7 @@ const Cards = () => {
               <div>
                 <ItemTitle>SYN CITY: Limited Blueprint</ItemTitle>
                 <ItemPrice>
-                  Price: <SmallText> 100,000.00 BUSD </SmallText>
+                  Price: <SmallText> 1,125,490.32 USD </SmallText>
                 </ItemPrice>
               </div>
             </CardItem>
