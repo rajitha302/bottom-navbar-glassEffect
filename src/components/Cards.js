@@ -80,7 +80,11 @@ font-size: 12px;
 font-weight: bold;
 `;
 
-const Section = styled.section`
+const Section1 = styled.section`
+margin-top: 15px;
+`;
+
+const Section2 = styled.section`
 margin-top: 45px;
 `;
 
@@ -91,7 +95,7 @@ const test = () => {
 const Cards = () => {
   return (
     <Wrapper>
-      <Section>
+      <Section1>
         <SectionHeading>Top Sales</SectionHeading>
         <Card>
           <CardContent>
@@ -112,7 +116,7 @@ const Cards = () => {
               <ItemImage src="https://public.nftstatic.com/static/nft/zipped/7781a080faca4c759fa940a655b71ba6_zipped.png" />
 
               <div>
-                <ItemTitle>Brawler_025_The_Red_Giant</ItemTitle>
+                <ItemTitle>Limited Edition Blueprint #4725</ItemTitle>
                 <ItemPrice>
                   Price: <SmallText> 100,000.00 BUSD </SmallText>
                 </ItemPrice>
@@ -123,7 +127,7 @@ const Cards = () => {
               <ItemImage src="	https://public.nftstatic.com/static/nft/zipped/16c94d761df147d693c51b555cb7ad03_zipped.png" />
 
               <div>
-                <ItemTitle>Brawler_025_The_Red_Giant</ItemTitle>
+                <ItemTitle>Brawler_225_The_Red_Giant</ItemTitle>
                 <ItemPrice>
                   Price: <SmallText> 100,000.00 BUSD </SmallText>
                 </ItemPrice>
@@ -131,9 +135,9 @@ const Cards = () => {
             </CardItem>
           </CardContent>
         </Card>
-      </Section>
+      </Section1>
 
-      <Section>
+      <Section2>
         <SectionHeading>Top Collections</SectionHeading>
         <Card>
           <CardContent>
@@ -143,7 +147,7 @@ const Cards = () => {
               <ItemImage src="	https://public.nftstatic.com/static/nft/zipped/9e274ac0a73b4eca8c3795188a8433c2_zipped.png" />
 
               <div>
-                <ItemTitle>Brawler_025_The_Red_Giant</ItemTitle>
+                <ItemTitle>Solv Vouchers</ItemTitle>
                 <ItemPrice>
                   Price: <SmallText> 100,000.00 BUSD </SmallText>
                 </ItemPrice>
@@ -154,7 +158,7 @@ const Cards = () => {
               <ItemImage src="	https://public.nftstatic.com/static/nft/zipped/57c5a900547b4b3cbce7d56b063166b3_zipped.png" />
 
               <div>
-                <ItemTitle>Brawler_025_The_Red_Giant</ItemTitle>
+                <ItemTitle>Binamon Forest Land</ItemTitle>
                 <ItemPrice>
                   Price: <SmallText> 100,000.00 BUSD </SmallText>
                 </ItemPrice>
@@ -165,7 +169,7 @@ const Cards = () => {
               <ItemImage src="		https://public.nftstatic.com/static/nft/zipped/e8ef50c91c2a4d9a9f4984690efef5f8_zipped.png" />
 
               <div>
-                <ItemTitle>Brawler_025_The_Red_Giant</ItemTitle>
+                <ItemTitle>SYN CITY: Limited Blueprint</ItemTitle>
                 <ItemPrice>
                   Price: <SmallText> 100,000.00 BUSD </SmallText>
                 </ItemPrice>
@@ -173,7 +177,7 @@ const Cards = () => {
             </CardItem>
           </CardContent>
         </Card>
-      </Section>
+      </Section2>
     </Wrapper>
   );
 };
